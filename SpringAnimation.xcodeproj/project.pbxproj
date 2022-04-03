@@ -11,7 +11,8 @@
 		9C28499727DEA9980002D718 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C28499627DEA9980002D718 /* ContentView.swift */; };
 		9C28499927DEA99A0002D718 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C28499827DEA99A0002D718 /* Assets.xcassets */; };
 		9C28499C27DEA99A0002D718 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C28499B27DEA99A0002D718 /* Preview Assets.xcassets */; };
-		9C2849A327DEA9C60002D718 /* ChainedSpiral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2849A227DEA9C60002D718 /* ChainedSpiral.swift */; };
+		9C2849A327DEA9C60002D718 /* ChainedSpiralAuto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2849A227DEA9C60002D718 /* ChainedSpiralAuto.swift */; };
+		B72F41A527FA4874002F0D2B /* ChainedSpiralManual.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72F41A427FA4874002F0D2B /* ChainedSpiralManual.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +21,8 @@
 		9C28499627DEA9980002D718 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9C28499827DEA99A0002D718 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C28499B27DEA99A0002D718 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		9C2849A227DEA9C60002D718 /* ChainedSpiral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainedSpiral.swift; sourceTree = "<group>"; };
+		9C2849A227DEA9C60002D718 /* ChainedSpiralAuto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainedSpiralAuto.swift; sourceTree = "<group>"; };
+		B72F41A427FA4874002F0D2B /* ChainedSpiralManual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainedSpiralManual.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,8 @@
 			children = (
 				9C28499427DEA9980002D718 /* SpringAnimationApp.swift */,
 				9C28499627DEA9980002D718 /* ContentView.swift */,
-				9C2849A227DEA9C60002D718 /* ChainedSpiral.swift */,
+				9C2849A227DEA9C60002D718 /* ChainedSpiralAuto.swift */,
+				B72F41A427FA4874002F0D2B /* ChainedSpiralManual.swift */,
 				9C28499827DEA99A0002D718 /* Assets.xcassets */,
 				9C28499A27DEA99A0002D718 /* Preview Content */,
 			);
@@ -141,7 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C28499727DEA9980002D718 /* ContentView.swift in Sources */,
-				9C2849A327DEA9C60002D718 /* ChainedSpiral.swift in Sources */,
+				B72F41A527FA4874002F0D2B /* ChainedSpiralManual.swift in Sources */,
+				9C2849A327DEA9C60002D718 /* ChainedSpiralAuto.swift in Sources */,
 				9C28499527DEA9980002D718 /* SpringAnimationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,7 +277,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SpringAnimation/Preview Content\"";
-				DEVELOPMENT_TEAM = NY797RX624;
+				DEVELOPMENT_TEAM = 6MTCHYNPAT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -302,7 +306,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SpringAnimation/Preview Content\"";
-				DEVELOPMENT_TEAM = NY797RX624;
+				DEVELOPMENT_TEAM = 6MTCHYNPAT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
