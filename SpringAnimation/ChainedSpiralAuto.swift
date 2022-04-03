@@ -9,6 +9,7 @@ import SwiftUI
 struct ChainedSpiralAuto: View {
     //1. Defining the initial animation state
         
+    @Binding var colorEnabled: Bool
     @State var moving = false //initialisation of moving to false
     //@State var stiffness: Double = ChainedSpiralAuto.defaultChangingStiffness
     
@@ -22,9 +23,11 @@ struct ChainedSpiralAuto: View {
                         .rotation3DEffect(.degrees(75), axis: (x: 1, y: 0, z: 0))
                        .offset(y: moving ? 150 : -180) //to use if you want continuous ripple
                         .animation(.interpolatingSpring(stiffness: 100, damping: 5).repeatForever(autoreverses:                   true).delay(Double(index)*0.06), value: moving) //repeatforever
+                        .foregroundColor(colorEnabled ? ContentView.circleColors[index] : .primary)
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
+//            .foregroundStyle(RadialGradient(colors: ContentView.circleColors, center: .leading, startRadius: 0, endRadius: 0))
         }
         .onAppear {
             moving = true
@@ -38,7 +41,7 @@ struct ChainedSpiralAuto: View {
 
 struct ChainedSpiralAuto_Previews: PreviewProvider {
     static var previews: some View {
-        ChainedSpiralAuto()
+        ChainedSpiralAuto(colorEnabled: .constant(true))
             .preferredColorScheme(.dark)
     }
 }

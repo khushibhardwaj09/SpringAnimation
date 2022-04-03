@@ -10,7 +10,8 @@
 import SwiftUI
 
 struct ChainedSpiralManual: View {
-        
+    
+    @Binding var colorEnabled: Bool
     @State var gestureOffset: CGFloat = 0.0
     @State var stiffness: Double = ChainedSpiralManual.defaultChangingStiffness
     
@@ -24,6 +25,7 @@ struct ChainedSpiralManual: View {
                         .rotation3DEffect(.degrees(75), axis: (1, 0, 0))
                         .offset(y: gestureOffset)
                         .animation(.interpolatingSpring(stiffness: stiffness, damping: 9).delay(Double(index) * 0.06), value: gestureOffset)
+                        .foregroundColor(colorEnabled ? ContentView.circleColors[index] : .primary)
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -45,7 +47,7 @@ struct ChainedSpiralManual: View {
 
 struct Previews_ChainedSpiralManual_Previews: PreviewProvider {
     static var previews: some View {
-        ChainedSpiralManual()
+        ChainedSpiralManual(colorEnabled: .constant(true))
             .preferredColorScheme(.dark)
     }
 }
