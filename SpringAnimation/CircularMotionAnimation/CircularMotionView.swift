@@ -24,10 +24,10 @@ struct CircularMotionView: View {
             ZStack(alignment: .top) {
                 Circle()
                     .frame(width: ballRadius * 2, height: ballRadius * 2)
-                Circle()
-                    .frame(width: 10, height: 10)
-                    .foregroundColor(.primary).colorInvert()
-                    .padding(5)
+//                Circle()
+//                    .frame(width: 10, height: 10)
+//                    .foregroundColor(.primary).colorInvert()
+//                    .padding(5)
             }
             .offset(y: circleRadius - ballRadius)
             .rotationEffect(.degrees(moving ? -circleRotationAngle : circleRotationAngle / 2), anchor: .center)

@@ -11,6 +11,7 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
+            
             SpringAnimationView()
                 .tabItem {
                     Label("Spring", systemImage: "scribble.variable")
@@ -19,7 +20,12 @@ struct ContentView: View {
                 .tabItem {
                     Label("Ball", systemImage: "circle.circle")
                 }
+            ChainAnimation()
+                .tabItem {
+                    Label("Chain", systemImage: "circle.hexagonpath")
+                }
         }
+        .tabViewStyle(.page)
     }
 }
 
