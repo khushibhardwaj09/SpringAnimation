@@ -9,11 +9,11 @@
 
 import SwiftUI
 
-struct ChainedSpiralManual: View {
+struct SpringAnimationManual: View {
     
     @Binding var colorEnabled: Bool
     @State var gestureOffset: CGFloat = 0.0
-    @State var stiffness: Double = ChainedSpiralManual.defaultChangingStiffness
+    @State var stiffness: Double = SpringAnimationManual.defaultChangingStiffness
     
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -25,15 +25,15 @@ struct ChainedSpiralManual: View {
                         .rotation3DEffect(.degrees(75), axis: (1, 0, 0))
                         .offset(y: gestureOffset)
                         .animation(.interpolatingSpring(stiffness: stiffness, damping: 9).delay(Double(index) * 0.06), value: gestureOffset)
-                        .foregroundColor(colorEnabled ? ContentView.circleColors[index] : .primary)
+                        .foregroundColor(colorEnabled ? SpringAnimationView.circleColors[index] : .primary)
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .gesture(DragGesture().onChanged({ gesture in
-                stiffness = ChainedSpiralManual.defaultChangingStiffness
+                stiffness = SpringAnimationManual.defaultChangingStiffness
                 gestureOffset = gesture.translation.height
             }).onEnded({ _ in
-                stiffness = ChainedSpiralManual.defaultEndedStiffness
+                stiffness = SpringAnimationManual.defaultEndedStiffness
                 gestureOffset = 0.0
             }))
         }
@@ -47,7 +47,7 @@ struct ChainedSpiralManual: View {
 
 struct Previews_ChainedSpiralManual_Previews: PreviewProvider {
     static var previews: some View {
-        ChainedSpiralManual(colorEnabled: .constant(true))
+        SpringAnimationManual(colorEnabled: .constant(true))
             .preferredColorScheme(.dark)
     }
 }
