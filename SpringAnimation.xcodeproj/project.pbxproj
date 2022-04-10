@@ -12,10 +12,14 @@
 		9C28499927DEA99A0002D718 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C28499827DEA99A0002D718 /* Assets.xcassets */; };
 		9C28499C27DEA99A0002D718 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C28499B27DEA99A0002D718 /* Preview Assets.xcassets */; };
 		9C2849A327DEA9C60002D718 /* SpringAnimationAuto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2849A227DEA9C60002D718 /* SpringAnimationAuto.swift */; };
+		9C64154D28024BA5005E2483 /* PlaneAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C64154C28024BA5005E2483 /* PlaneAnimation.swift */; };
+		9C64154F28024D04005E2483 /* SpringButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C64154E28024D04005E2483 /* SpringButtonStyle.swift */; };
+		9C64155228025D9F005E2483 /* RevolvingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C64155128025D9F005E2483 /* RevolvingAnimation.swift */; };
+		9C64155528026254005E2483 /* Color+CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C64155428026254005E2483 /* Color+CustomColor.swift */; };
 		B72F41A527FA4874002F0D2B /* SpringAnimationManual.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72F41A427FA4874002F0D2B /* SpringAnimationManual.swift */; };
 		B72F41C127FA7CA3002F0D2B /* CircularMotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72F41C027FA7CA3002F0D2B /* CircularMotionView.swift */; };
 		B72F41C327FA8364002F0D2B /* SpringAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72F41C227FA8364002F0D2B /* SpringAnimationView.swift */; };
-		B72F41C727FA8804002F0D2B /* ChainAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72F41C627FA8804002F0D2B /* ChainAnimation.swift */; };
+		B72F41C727FA8804002F0D2B /* CaterpillarAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72F41C627FA8804002F0D2B /* CaterpillarAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,10 +29,14 @@
 		9C28499827DEA99A0002D718 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C28499B27DEA99A0002D718 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9C2849A227DEA9C60002D718 /* SpringAnimationAuto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringAnimationAuto.swift; sourceTree = "<group>"; };
+		9C64154C28024BA5005E2483 /* PlaneAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneAnimation.swift; sourceTree = "<group>"; };
+		9C64154E28024D04005E2483 /* SpringButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringButtonStyle.swift; sourceTree = "<group>"; };
+		9C64155128025D9F005E2483 /* RevolvingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevolvingAnimation.swift; sourceTree = "<group>"; };
+		9C64155428026254005E2483 /* Color+CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+CustomColor.swift"; sourceTree = "<group>"; };
 		B72F41A427FA4874002F0D2B /* SpringAnimationManual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringAnimationManual.swift; sourceTree = "<group>"; };
 		B72F41C027FA7CA3002F0D2B /* CircularMotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularMotionView.swift; sourceTree = "<group>"; };
 		B72F41C227FA8364002F0D2B /* SpringAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringAnimationView.swift; sourceTree = "<group>"; };
-		B72F41C627FA8804002F0D2B /* ChainAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainAnimation.swift; sourceTree = "<group>"; };
+		B72F41C627FA8804002F0D2B /* CaterpillarAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaterpillarAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +69,12 @@
 		9C28499327DEA9980002D718 /* SpringAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				9C64155328026233005E2483 /* Extensions */,
+				9C64155028025D75005E2483 /* RevolvingAnimation */,
+				9C64154B28024AF2005E2483 /* PlaneAnimation */,
 				9C28499427DEA9980002D718 /* SpringAnimationApp.swift */,
 				9C28499627DEA9980002D718 /* ContentView.swift */,
-				B72F41C627FA8804002F0D2B /* ChainAnimation.swift */,
+				B72F41C627FA8804002F0D2B /* CaterpillarAnimation.swift */,
 				B72F41C427FA8787002F0D2B /* SpringAnimation */,
 				B72F41C527FA878E002F0D2B /* CircularMotionAnimation */,
 				9C28499827DEA99A0002D718 /* Assets.xcassets */,
@@ -78,6 +89,31 @@
 				9C28499B27DEA99A0002D718 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9C64154B28024AF2005E2483 /* PlaneAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				9C64154C28024BA5005E2483 /* PlaneAnimation.swift */,
+				9C64154E28024D04005E2483 /* SpringButtonStyle.swift */,
+			);
+			path = PlaneAnimation;
+			sourceTree = "<group>";
+		};
+		9C64155028025D75005E2483 /* RevolvingAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				9C64155128025D9F005E2483 /* RevolvingAnimation.swift */,
+			);
+			path = RevolvingAnimation;
+			sourceTree = "<group>";
+		};
+		9C64155328026233005E2483 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9C64155428026254005E2483 /* Color+CustomColor.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		B72F41C427FA8787002F0D2B /* SpringAnimation */ = {
@@ -168,13 +204,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C64155528026254005E2483 /* Color+CustomColor.swift in Sources */,
 				9C28499727DEA9980002D718 /* ContentView.swift in Sources */,
 				B72F41A527FA4874002F0D2B /* SpringAnimationManual.swift in Sources */,
-				B72F41C727FA8804002F0D2B /* ChainAnimation.swift in Sources */,
+				B72F41C727FA8804002F0D2B /* CaterpillarAnimation.swift in Sources */,
 				B72F41C327FA8364002F0D2B /* SpringAnimationView.swift in Sources */,
+				9C64154F28024D04005E2483 /* SpringButtonStyle.swift in Sources */,
+				9C64155228025D9F005E2483 /* RevolvingAnimation.swift in Sources */,
 				B72F41C127FA7CA3002F0D2B /* CircularMotionView.swift in Sources */,
 				9C2849A327DEA9C60002D718 /* SpringAnimationAuto.swift in Sources */,
 				9C28499527DEA9980002D718 /* SpringAnimationApp.swift in Sources */,
+				9C64154D28024BA5005E2483 /* PlaneAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

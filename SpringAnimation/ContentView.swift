@@ -20,9 +20,13 @@ struct ContentView: View {
                 .tabItem {
                     Label("Ball", systemImage: "circle.circle")
                 }
-            ChainAnimation()
+            CaterpillarAnimation()
                 .tabItem {
                     Label("Chain", systemImage: "circle.hexagonpath")
+                }
+            RevolvingAnimation()
+                .tabItem {
+                    Label("Revolution", systemImage: "circle.grid.cross.down.fill")
                 }
         }
         .tabViewStyle(.page)
