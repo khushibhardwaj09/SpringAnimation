@@ -20,6 +20,7 @@
 		B72F41C127FA7CA3002F0D2B /* CircularMotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72F41C027FA7CA3002F0D2B /* CircularMotionView.swift */; };
 		B72F41C327FA8364002F0D2B /* SpringAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72F41C227FA8364002F0D2B /* SpringAnimationView.swift */; };
 		B72F41C727FA8804002F0D2B /* CaterpillarAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72F41C627FA8804002F0D2B /* CaterpillarAnimation.swift */; };
+		B79A70B028026DB800DA1814 /* MenuButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79A70AF28026DB800DA1814 /* MenuButtonAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		B72F41C027FA7CA3002F0D2B /* CircularMotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularMotionView.swift; sourceTree = "<group>"; };
 		B72F41C227FA8364002F0D2B /* SpringAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringAnimationView.swift; sourceTree = "<group>"; };
 		B72F41C627FA8804002F0D2B /* CaterpillarAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaterpillarAnimation.swift; sourceTree = "<group>"; };
+		B79A70AF28026DB800DA1814 /* MenuButtonAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				9C64155328026233005E2483 /* Extensions */,
 				9C64155028025D75005E2483 /* RevolvingAnimation */,
 				9C64154B28024AF2005E2483 /* PlaneAnimation */,
+				B79A70AE28026DA900DA1814 /* MenuButtonAnimation */,
 				9C28499427DEA9980002D718 /* SpringAnimationApp.swift */,
 				9C28499627DEA9980002D718 /* ContentView.swift */,
 				B72F41C627FA8804002F0D2B /* CaterpillarAnimation.swift */,
@@ -132,6 +135,14 @@
 				B72F41C027FA7CA3002F0D2B /* CircularMotionView.swift */,
 			);
 			path = CircularMotionAnimation;
+			sourceTree = "<group>";
+		};
+		B79A70AE28026DA900DA1814 /* MenuButtonAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				B79A70AF28026DB800DA1814 /* MenuButtonAnimation.swift */,
+			);
+			path = MenuButtonAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +224,7 @@
 				9C64155228025D9F005E2483 /* RevolvingAnimation.swift in Sources */,
 				B72F41C127FA7CA3002F0D2B /* CircularMotionView.swift in Sources */,
 				9C2849A327DEA9C60002D718 /* SpringAnimationAuto.swift in Sources */,
+				B79A70B028026DB800DA1814 /* MenuButtonAnimation.swift in Sources */,
 				9C28499527DEA9980002D718 /* SpringAnimationApp.swift in Sources */,
 				9C64154D28024BA5005E2483 /* PlaneAnimation.swift in Sources */,
 			);

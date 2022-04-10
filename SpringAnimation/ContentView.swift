@@ -28,6 +28,10 @@ struct ContentView: View {
                 .tabItem {
                     Label("Revolution", systemImage: "circle.grid.cross.down.fill")
                 }
+            MenuButtonAnimation()
+                .tabItem {
+                    Label("Menu Button", systemImage: "line.3.horizontal")
+                }
         }
         .tabViewStyle(.page)
     }
